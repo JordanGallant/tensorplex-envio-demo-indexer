@@ -1,0 +1,55 @@
+type ERC20BurnMint_Approval {
+  id: ID!
+  owner: String!
+  spender: String!
+  value: BigInt!
+}
+
+type ERC20BurnMint_DefaultAdminDelayChangeCanceled {
+  id: ID!
+}
+
+type ERC20BurnMint_DefaultAdminDelayChangeScheduled {
+  id: ID!
+  newDelay: BigInt!
+  effectSchedule: BigInt!
+}
+
+type ERC20BurnMint_DefaultAdminTransferCanceled {
+  id: ID!
+}
+
+type ERC20BurnMint_DefaultAdminTransferScheduled {
+  id: ID!
+  newAdmin: String!
+  acceptSchedule: BigInt!
+}
+
+type ERC20BurnMint_RoleAdminChanged {
+  id: ID!
+  role: String!
+  previousAdminRole: String!
+  newAdminRole: String!
+}
+
+type ERC20BurnMint_RoleGranted {
+  id: ID!
+  role: String!
+  account: String!
+  sender: String!
+}
+
+type ERC20BurnMint_RoleRevoked {
+  id: ID!
+  role: String!
+  account: String!
+  sender: String!
+}
+
+type ERC20BurnMint_Transfer {
+  id: ID!
+  from: String!
+  to: String!
+  value: BigInt!
+}
+
